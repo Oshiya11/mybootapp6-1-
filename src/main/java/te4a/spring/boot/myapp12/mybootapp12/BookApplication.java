@@ -1,4 +1,4 @@
-package te4a.spring.boot.myapp11.mybootapp11;
+package te4a.spring.boot.myapp12.mybootapp12;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

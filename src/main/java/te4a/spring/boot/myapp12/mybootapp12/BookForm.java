@@ -1,4 +1,4 @@
-package te4a.spring.boot.myapp11.mybootapp11;
+package te4a.spring.boot.myapp12.mybootapp12;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
@@ -15,6 +15,8 @@ public class BookForm {
   @TestValid(param = "abc")
   private String title;
   @Size(min = 3, max = 20)
+  @NotNull
+  @Writter(ok = "東北タロウ", message = "Input {0}")
   private String writter;
   private String publisher;
   @Min(0)
