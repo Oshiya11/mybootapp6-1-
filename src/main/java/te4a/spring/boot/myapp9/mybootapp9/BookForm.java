@@ -1,12 +1,11 @@
-package te4a.spring.boot.myapp8.mybootapp8;
+package te4a.spring.boot.myapp9.mybootapp9;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class BookBean {
+public class BookForm {
   private Integer id ;
   private String title;
   private String writter;
