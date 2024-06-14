@@ -23,8 +23,8 @@ public class LoginUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<UserBean> opt = userRepository.findById(username);
-        UserBean user = opt.orElseThrow(() -> new UsernameNotFoundException("The requested user is not found."));
-        return new LoginUserDetails(user);
+        UserBean userBean = opt.orElseThrow(() -> new UsernameNotFoundException("The requested user is not found."));
+        return new LoginUserDetails(userBean, true, true, true, getAuthorities(userBean));
     }
     private Collection<GrantedAuthority> getAuthorities(UserBean userBean) {
         return AuthorityUtils.createAuthorityList("ROLE_USER");

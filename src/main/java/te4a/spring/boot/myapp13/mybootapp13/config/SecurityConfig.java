@@ -16,7 +16,7 @@ import te4a.spring.boot.myapp13.mybootapp13.service.LoginUserDetailsService;
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig{
     @Autowired
     private LoginUserDetailsService loginUserDetailsSrevice;
 
